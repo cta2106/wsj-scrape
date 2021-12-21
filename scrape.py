@@ -1,4 +1,5 @@
 import os
+import newspaper
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,7 +16,15 @@ from xpaths import (
 )
 
 
-def get_page_source(url: str) -> str:
+def get_text(url: str) -> str:
+    page_source = _get_page_source(url)
+    article = newspaper.Article(url="")
+    article.set_html(page_source)
+    article.parse()
+    return article.text
+
+
+def _get_page_source(url: str) -> str:
     with WebDriver() as driver:
         driver.get(url)
         _sign_in(driver, SIGN_IN_XPATH)
