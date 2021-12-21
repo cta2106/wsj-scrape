@@ -70,6 +70,5 @@ def _page_source(driver: WebDriver, headline_xpath: str) -> str:
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, headline_xpath))
     )
-
     page_source = driver.execute_script("return document.body.innerHTML;")
     return page_source
