@@ -10,5 +10,5 @@ Download the latest version of [Google Chromedriver](https://chromedriver.chromi
 | ----------------------- |---|
 | WSJ_USERNAME            |Username for Wall Street Journal subscription account.|
 | WSJ_PASSWORD            |Password for Wall Street Journal subscription account.|
-| GOOGLE_CHROME_PATH      |Path for Google Chromedriver executable. |
+| CHROMEDRIVER_PATH      |Path for Google Chromedriver executable. |
 | GOOGLE_CHROME_BIN  _(Optional)_    |Path for Google Chromedriver binaries.    |
