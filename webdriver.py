@@ -13,7 +13,7 @@ class WebDriver(webdriver.Chrome):
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
         options.headless = True
-        executable_path = os.getenv("GOOGLE_CHROME_PATH")
+        executable_path = os.getenv("CHROMEDRIVER_PATH")
         super(WebDriver, self).__init__(
             options=options, executable_path=executable_path, keep_alive=True
         )
