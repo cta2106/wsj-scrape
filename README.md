@@ -1,6 +1,9 @@
 # wsj-scrape
 Scrape WSJ articles behind paywall given user credentials
 
+### Chromedriver
+Download the latest version of [Google Chromedriver](https://chromedriver.chromium.org/downloads).
+
 ### Environment Variables
 
 | Environment Variable| Description  |
